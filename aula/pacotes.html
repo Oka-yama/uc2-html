@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornada Viagens</title>
+    <title>Pacotes de Viagens</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -54,81 +55,37 @@
             </div>
         </nav>
     </header>
-    <main style="margin-top: 220px";> <!-- area principal da página -->
-        <section id="sobre">
-            <h2>Sobre nós</h2>
-            <p>
-                Somos uma agência apaixonada por criar viagens inesqueciveis...
-            </p>
-        </section>
-        <section id="pacotes">
-            <h2>Ofertas da Semana</h2>
-            <article id=japao class='pacote'>
-                <h3>Japão</h3>
-                <figure>
-                    <img src="img/japao.jpg" alt="pacote de viagem para o Japão" width=300>
-                </figure>
-                <p class="preco">Hotel + Aéreo <br> R$ 4000<strong></p>
-
-            </article>
-            <article id="sanandreas" class='pacote'>
-                <h3>San Andreas</h3>
-                <figure>
-                    <img src="img/san-andreas.jpg" alt="pacote de viagem para o San Andreas" width=300>
-                </figure>
-                <p class="preco">Hotel + Aéreo <br> R$ 3000<strong></p>
-            </article>
-            <article id="paraiba" class='pacote'>
-                <h3>Paraíba</h3>
-                <figure>
-                    <img src="img/paraiba.jpg" alt="pacote de viagem para o Paraíba" width=300 height="200">
-                </figure>
-                <p class="preco">Hotel + Aéreo <br> R$ 6000<strong></p>
-            </article>
-            <ul type="disk">
-                <!--square / circle / disk(padrão)-->
-                <li>Japão - Hotel + Aéreo R$ 4000</li>
-                <li>San Andreas - Hotel + Aéreo R$ 3000</li>
-                <li>Paraíba - Hotel + Aéreo R$ 6000</li>
-            </ul>
-            <h2>Opções de Outono</h2>
-            <!-- lista ordenada ou lista numerada -->
-            <ol>
-                <!-- a, A, 1, i, I -->
-                <li>Gramado - R$</li>
-                <li>Canela - R$</li>
-                <li>Miguel Pereira - RJ</li>
-            </ol>
-        </section>
-        <section id="midia">
-            <h2>curta novas aventuras</h2>
-            <video controls width="500">
-                <source src="videos/viagem.mp4" type=video/mp4>
-                Seu navegador não suporta vídeos
-            </video>
-            <audio controls>
-                <source src="audios/Fantasy.mp3" type="audio/mp3">
-                Seu navegador não suporta audios
-            </audio>
+    <main style="margin-top: 220px;">
+        <section id="tabela-precos">
+            <h2>👍Tabela de Pacotes e Valores👍</h2>
+            <table class="table table-striped">
+                <caption>Confira nossos pacotes de viagens com preços imperdiveis!✈️</caption>
+                <tr>
+                    <th>Destinos</th>
+                    <th>Pacote</th>
+                    <th>Preços</th>
+                </tr>
+                <tr>
+                    <td>Japão</td>
+                    <td>Hotel + Aéreo</td>
+                    <td>R$ 4000</td>
+                </tr>
+                <tr>
+                    <td>San Andreas</td>
+                    <td>Hotel + Aéreo</td>
+                    <td>R$ 3000</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td>Hotel + Aéreo + Translado</td>
+                    <td>R$ 6000</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Promoção especial! 📣 Descontos para grupos</strong></td>
+                </tr>
+            </table>
         </section>
     </main>
-    <aside class="mapa">
-        <h3>Onde estamos</h3>
-        <div class=mapa-conteudo>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.4984111243252!2d-43.33458422393584!3d-22.821042634813733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9964b38a4dfe47%3A0x4adabb3041e21840!2sSenac%20Iraj%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1775515075592!5m2!1spt-BR!2sbr"
-                width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <address>
-                Rua exemplo, 127<br>
-                Bairro: Centro<br>
-                Nova Iguaçu<br>
-                Rio de Janeiro<br>
-                cep: 26.000.000
-            </address>
-        </div>
-
-    </aside>
     <footer>
         <!-- Rodapé da página -->
         <div class="footer-container">
@@ -151,6 +108,9 @@
             </nav>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
